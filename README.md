@@ -25,6 +25,10 @@ yarn init
 ```
 
 ### Passos para inicializar a aplicação:
+
+Rodar o comando:
 ```
 yarn dev:server
 ```
+Para acessar a aplicação:
+- http://localhost:3333
