@@ -3,6 +3,7 @@ import { getRepository } from 'typeorm';
 import fs from 'fs';
 import uploadConfig from '../config/upload';
 import User from '../models/Users';
+import AppError from '../errors/AppError';
 
 interface Request {
   user_id: string;
@@ -14,7 +15,8 @@ class UpdateUserAvatarService {
     const userRepository = getRepository(User);
 
     const user = await userRepository.findOne(user_id);
-    if (!user) throw Error('Only authenticated users can change avatar.');
+    if (!user)
+      throw new AppError('Only authenticated users can change avatar.', 401);
 
     // Caso o usuário já tenha avatar, deletar o anterior antes de salvar o novo
     if (user.avatar) {
