@@ -3,8 +3,8 @@ import { verify } from 'jsonwebtoken';
 import authConfig from '../config/auth';
 
 interface TokenPayload {
-  iat: string;
-  exp: string;
+  iat: number;
+  exp: number;
   sub: string;
 }
 
