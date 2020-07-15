@@ -1,7 +1,7 @@
 import { hash } from 'bcryptjs';
 import { inject, injectable } from 'tsyringe';
 import AppError from '@shared/errors/AppError';
-import IUsersRepository from '../infra/typeorm/repositories/UsersRepository';
+import IUsersRepository from '../repositories/IUserRepository';
 
 import User from '../infra/typeorm/entities/Users';
 
