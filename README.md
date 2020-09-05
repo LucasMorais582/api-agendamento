@@ -19,7 +19,7 @@ Aplicação back-end que manipula dados de clientes para marcação de agendamen
 
 Clonando o projeto
 ```
-git clone https://github.com/LucasMorais582/api-agendamento.git
+git clone https://github.com/LucasMorais582/api-appointments.git
 ```
 Após acessar o diretório do projeto, rodar o comando no terminal para baixar a node_modules:
 ```
